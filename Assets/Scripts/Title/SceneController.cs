@@ -21,10 +21,11 @@ public class SceneController : MonoBehaviour
             canSceneChange = false;
             FadeManager.FadeOut("GameScene");
         }
+        /*
         if (GameController.VoiceMeeter >= 0.5 && canSceneChange)
         {
             canSceneChange = false;
             FadeManager.FadeOut("GameScene");
-        }
+        }*/
     }
 }

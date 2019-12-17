@@ -13,10 +13,13 @@ public class InputScript : MonoBehaviour
     // 入力かのであるか
     private bool input_enable;
 
+    bool can = false;
+
     // Start is called before the first frame update
     private void Start()
     {
         Initialized();
+        can = false;
     }
 
     // Update is called once per frame
@@ -42,6 +45,7 @@ public class InputScript : MonoBehaviour
             case 0:
                 playerController.BallShoot();
                 input_phase++;
+                can = true;
                 break;
             case 1:
                 playerController.FloorSweep();
